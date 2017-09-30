@@ -63,3 +63,18 @@ func main() {
 }
 
 ```
+
+# Using EncryptCBC
+
+```go
+
+func main() {
+
+	textCry := gcry.EncryptGCM("Let's encrypt our text here.")
+	fmt.Println(textCry)
+
+	textDescry := gcry.DecryptGCM(textCry)
+	fmt.Println(textDescry)
+}
+
+```
