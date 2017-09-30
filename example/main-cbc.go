@@ -9,6 +9,7 @@
 package main
 
 import (
+	"fmt"
 	gcry "github.com/jeffotoni/gcry"
 )
 
