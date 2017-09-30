@@ -17,10 +17,6 @@ import (
 	"io"
 )
 
-const (
-	KEY = "AES256Key-32Characters1234567890"
-)
-
 //
 //
 //
