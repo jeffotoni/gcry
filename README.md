@@ -31,13 +31,6 @@ We use numbers like CBC, CFB, GCM, OFB, MD5, BLOWFISH etc.
 # Using EncryptGCM
 
 ```go
-/*
-* Golang presentation
-*
-* @package     main
-* @author      @jeffotoni
-* @size        2017
- */
 
 package main
 
@@ -57,16 +50,35 @@ fsunc main() {
 
 ```
 
+# Using EncryptCFB
+
+```go
+
+package main
+
+import (
+	"fmt"
+	gcry "github.com/jeffotoni/gcry"
+)
+
+//
+//
+//
+func main() {
+
+	cipherText := gcry.EncryptCFB("new functional ex: of crifra CBC ")
+
+	fmt.Println(cipherText)
+
+	textplan := gcry.DecryptCFB(cipherText)
+	fmt.Println(textplan)
+}
+
+```
+
 # Using EncryptCBC
 
 ```go
-/*
-* Golang presentation
-*
-* @package     main
-* @author      @jeffotoni
-* @size        2017
- */
 
 package main
 
