@@ -17,9 +17,9 @@ func main() {
 
 	password := "1234567890#$"
 
-	hashBlo := Blowfish(password)
+	hashBlo := gcry.Blowfish(password)
 
-	if CheckBlowfish(password, hashBlo) {
+	if gcry.CheckBlowfish(password, hashBlo) {
 
 		fmt.Println("ok, password correct!")
 
