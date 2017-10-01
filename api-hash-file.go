@@ -13,7 +13,6 @@ import (
 	"encoding/hex"
 	"fmt"
 	"io"
-
 	"os"
 )
 
