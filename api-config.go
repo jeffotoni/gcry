@@ -17,4 +17,6 @@ const (
 
 var (
 	Nonce []byte
+
+	SHA1_SALT = "3838x7xx2"
 )
