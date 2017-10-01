@@ -214,3 +214,23 @@ func main() {
 }
 
 ```
+
+# Using Sha256
+
+```go
+
+package main
+
+import (
+	"fmt"
+	gcry "github.com/jeffotoni/gcry"
+)
+
+func main() {
+
+	password := "1234567890#$"
+
+	hash := gcry.Sha256(password)
+}
+
+```
