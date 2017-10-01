@@ -234,3 +234,29 @@ func main() {
 }
 
 ```
+
+# Using OFB File
+
+It is possible to encrypt files, ie your content will be encrypted and generated a new file.
+
+```go
+
+package main
+
+import (
+	"fmt"
+	gcry "github.com/jeffotoni/gcry"
+)
+
+func main() {
+	
+	fileCry := gcry.EncryptOFBFile("main-cbc.go")
+
+	fmt.Println(fileCry)
+
+	fileDecry := gcry.DecryptOFBFile(fileCry)
+
+	fmt.Println(fileDecry)
+}
+
+```
