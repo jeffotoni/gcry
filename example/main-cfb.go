@@ -13,12 +13,9 @@ import (
 	gcry "github.com/jeffotoni/gcry"
 )
 
-//
-//
-//
 func main() {
 
-	cipherText := gcry.EncryptCFB("new functional ex: of crifra CBC ")
+	cipherText := gcry.EncryptCFB("new functional ex: of crifra CFB ")
 
 	fmt.Println(cipherText)
 
