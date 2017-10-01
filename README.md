@@ -121,3 +121,25 @@ func main() {
 }
 
 ```
+
+# Using Sha1
+
+```go
+
+package main
+
+import (
+	"fmt"
+	gcry "github.com/jeffotoni/gcry"
+)
+
+func main() {
+
+	password := "1234567890#$"
+
+	hash := gcry.Sha1(password)
+
+	fmt.Println(hash)
+}
+
+```
