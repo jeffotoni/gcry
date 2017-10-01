@@ -15,6 +15,6 @@ import (
 
 func main() {
 
-	hash, _ := gcry.HashFile("mozilla.pdf")
+	hash, _ := gcry.HashFile("main-cbc.go")
 	fmt.Println(hash)
 }
