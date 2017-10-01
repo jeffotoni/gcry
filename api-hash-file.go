@@ -21,6 +21,11 @@ func HashFile(filePath string) (string, error) {
 
 	var returnMD5String string
 
+	if !FileExists(filePath) {
+
+		fmt.Println("error file not exist!")
+	}
+
 	file, err := os.Open(filePath)
 	if err != nil {
 
@@ -39,5 +44,9 @@ func HashFile(filePath string) (string, error) {
 	returnMD5String = hex.EncodeToString(hashInBytes)
 
 	return returnMD5String, nil
+}
 
+func FileExists(name string) bool {
+	_, err := os.Stat(name)
+	return !os.IsNotExist(err)
 }
