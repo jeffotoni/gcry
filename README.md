@@ -103,3 +103,21 @@ func main() {
 }
 
 ```
+
+# Using Uid Rand
+
+```go
+
+package main
+
+import (
+	"fmt"
+	gcry "github.com/jeffotoni/gcry"
+)
+
+func main() {
+
+	fmt.Println(gcry.UidRand())
+}
+
+```
