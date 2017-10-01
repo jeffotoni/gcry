@@ -18,7 +18,6 @@ import (
 //
 func main() {
 
-	// multiple 16 len text
 	cipherText := gcry.EncryptCFB("new functional ex: of crifra CBC ")
 
 	fmt.Println(cipherText)

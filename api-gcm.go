@@ -42,7 +42,8 @@ func GenerateNonce() (*[NonceSize]byte, error) {
 
 func EncryptGCM(text string) string {
 
-	// The key argument should be the AES key, either 16 or 32 bytes
+	// The key argument should be the AES key,
+	// either 16 or 32 bytes
 	// to select AES-128 or AES-256.
 	key := []byte(KEY)
 
