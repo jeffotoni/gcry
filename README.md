@@ -12,19 +12,23 @@ We use numbers like CBC, CFB, GCM, OFB, MD5, BLOWFISH etc.
 
 - gcry
 	- example
+		- main-blofish-uid-rand.go
+		- main-blofish.go
 		- main-cbc.go
-		- main-cbc.go
-		- main-cbc.go
-		- main-cbc.go
-		- main-cbc.go
-		- main-cbc.go
+		- main-cfb.go
+		- main-gcm.go
+		- main-hash-file.go
+		- main-sh1.go
+		- main-uid-rand.go
 
- - api-cbc.go
- - api-cbc.go
- - api-cbc.go
- - api-cbc.go
- - api-cbc.go
- - api-cbc.go
+	- api-blofish-uid-rand.go
+	- api-blofish.go
+	- api-cbc.go
+	- api-cfb.go
+	- api-gcm.go
+	- api-hash-file.go
+	- api-sh1.go
+	- api-uid-rand.go
 
 ```
 
