@@ -13,17 +13,12 @@ import (
 	gcry "github.com/jeffotoni/gcry"
 )
 
-//
-//
-//
 func main() {
 
-	// multiple 16 len text
-	cipherText := gcry.EncryptCBC("new functional ex: of crifra CBC")
+	cipherText := gcry.EncryptCFB("new functional ex: of crifra CFB ")
 
 	fmt.Println(cipherText)
 
-	textplan := gcry.DecryptCBC(cipherText)
-
+	textplan := gcry.DecryptCFB(cipherText)
 	fmt.Println(textplan)
 }

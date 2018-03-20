@@ -18,12 +18,12 @@ import (
 //
 func main() {
 
-	// multiple 16 len text
-	cipherText := gcry.EncryptCBC("new functional ex: of crifra CBC")
+	//
+	fileCry := gcry.EncryptOFBFile("main-cbc.go")
 
-	fmt.Println(cipherText)
+	fmt.Println(fileCry)
 
-	textplan := gcry.DecryptCBC(cipherText)
+	fileDecry := gcry.DecryptOFBFile(fileCry)
 
-	fmt.Println(textplan)
+	fmt.Println(fileDecry)
 }
